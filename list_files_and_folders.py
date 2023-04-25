@@ -22,10 +22,10 @@ for file in files:
 
 # guardar archivo txt
 with open('list_files_and_folders.txt', 'w') as f:
-    f.write('Directorios: \n')
+    f.write('Directories: \n')
     for item in directorios:
         f.write(item + '\n')
-    f.write('\nArchivos: \n')
+    f.write('\nFiles: \n')
     for item in archivos:
         f.write(item + '\n')
 #cerrar archivo
