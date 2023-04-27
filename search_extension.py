@@ -17,14 +17,17 @@ while True:
     print("Espere...")
     
     # Recorrer todos los archivos del directorio actual
+    count = 0
     for root, dirs, files in os.walk(dir_path):
         for filename in files:
             # Si el archivo tiene la extensión buscada, copiarlo a la carpeta 'busqueda'
-            count = 0
             if filename.endswith(f".{extension}"):
-                shutil.copy2(os.path.join(root, filename), os.path.join(busqueda_dir, filename))
-                #print(f"Se copió el archivo {filename} en {busqueda_dir}")
-                count += 1 # Contador de archivos encontrados       
+                if not os.path.exists(os.path.join(busqueda_dir, filename)):
+                    shutil.copy2(os.path.join(root, filename), os.path.join(busqueda_dir, filename))
+                    print(f"Se copió el archivo {filename} en {busqueda_dir}")
+                    count += 1 # Contador de archivos encontrados
+                else:
+                    print(f"El archivo {filename} ya existe en {busqueda_dir}")    
     print("Búsqueda finalizada")
     print(f"Se encontraron {count} archivos con la extensión .{extension}")
 
