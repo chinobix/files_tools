@@ -2,7 +2,7 @@ import os
 import shutil
 while True:
     # Pedir al usuario la extensión a buscar
-    extension = input("Enter the file extension to search for (without the dot): ")
+    extension = input("Introduzca la extensión de archivo a buscar (sin punto): ")
 
     # Obtener el directorio actual
     dir_path = os.getcwd()
@@ -11,10 +11,10 @@ while True:
     busqueda_dir = os.path.join(dir_path, 'busqueda')
     if not os.path.exists(busqueda_dir):
         os.makedirs(busqueda_dir)
-    print(f"The folder 'search' was created in {dir_path}")
-    print(f"Files with the extension .{extension} will be searched for in {dir_path}")
-    print(f"The found files will be copied to {busqueda_dir}")
-    print("wait...")
+    print(f"Se creó la carpeta 'busqueda' en {dir_path}")
+    print(f"Se buscarán archivos con la extensión .{extension} en {dir_path}")
+    print(f"Los archivos encontrados se copiarán en {busqueda_dir}")
+    print("Espere...")
     
     # Recorrer todos los archivos del directorio actual
     count = 0
@@ -24,14 +24,14 @@ while True:
             if filename.endswith(f".{extension}"):
                 if not os.path.exists(os.path.join(busqueda_dir, filename)):
                     shutil.copy2(os.path.join(root, filename), os.path.join(busqueda_dir, filename))
-                    print(f"The file {filename} was copied in {busqueda_dir}")
+                    print(f"Se copió el archivo {filename} en {busqueda_dir}")
                     count += 1 # Contador de archivos encontrados
                 else:
-                    print(f"The file {filename} alredy exist in {busqueda_dir}")    
-    print("Search finished")
-    print(f"Found {count} files with the extension .{extension}")
+                    print(f"El archivo {filename} ya existe en {busqueda_dir}")    
+    print("Búsqueda finalizada")
+    print(f"Se encontraron {count} archivos con la extensión .{extension}")
 
 
-    respuesta = input("Do you want to perform another search? (y/n):")
-    if respuesta.lower() != "y":
+    respuesta = input("¿Desea realizar otra búsqueda? (s/n): ")
+    if respuesta.lower() != "s":
         break
