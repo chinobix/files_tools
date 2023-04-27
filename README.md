@@ -5,7 +5,7 @@ Simple scripts for file management.
 When this script is executed, it creates a txt file with a list of directories and files that are inside the folder where the script was executed
 
 ***search_extension.py***
-This script searches for files with specified extensions in the directory where it is executed, creates a directory called 'busqueda', and copies all found files there.
+This script searches for files with specified extensions in the directory where it is executed, creates a directory called 'search', and copies all found files there.
 I am going to be uploading more useful tools.
 
 # Herramientas de archivos en python
