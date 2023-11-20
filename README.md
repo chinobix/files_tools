@@ -1,5 +1,6 @@
 # Files tools in python
 Simple scripts for file management.
+Place the script in the directory you want to organize.
 
 ***list_files_and_folders.py*** 
 When this script is executed, it creates a txt file with a list of directories and files that are inside the folder where the script was executed
@@ -13,6 +14,7 @@ I am going to be uploading more useful tools.
 
 # Herramientas de archivos en python
 Scripts simples para la gestión de archivos.
+Copia el script dentro del directorio que quieras organizar.
 
 ***list_files_and_folders.py*** Al ejecutar este script,
 se crea un archivo txt con una lista de directorios y archivos que se encuentran
