@@ -10,7 +10,7 @@ This script searches for files with specified extensions in the directory where 
 
 ***plex_movie_folder.py*** organizes the files in a directory by creating directories for each file and moving the files to their respective directories.
 
-I am going to be uploading more useful tools.
+***increment_file_000.py*** It renames all the files in the directory where it's located, which is a four-digit number that starts from 0000 and increments by 1 for each file.
 
 # Herramientas de archivos en python
 Scripts simples para la gestión de archivos.
@@ -23,6 +23,7 @@ dentro de la carpeta donde se ejecutó el script.
 ***search_extension_spanish.py***
 Este script busca los archivos con las extensiones que se le diga, en el directorio donde se ejecuta, hace in directorio llamado 'busqueda' y copia ahi todos los archivos encontrados
 
-***plex_movie_folder.py*** organizes the files in a directory by creating directories for each file and moving the files to their respective directories.
+***plex_movie_folder.py*** Organiza los archivos en un directorio creando directorios para cada archivo y moviendo los archivos a sus respectivos directorios.
 
-voy a ir subiendo mas herramientas utiles
+***increment_file_000.py*** Renombra todos los archivos en el directorio donde se encuentra, que es un número de cuatro dígitos que comienza desde 0000 e incrementa en 1 para cada archivo.
+
